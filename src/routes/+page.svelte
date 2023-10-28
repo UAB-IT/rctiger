@@ -1,6 +1,27 @@
 <script>
 	import { fly } from 'svelte/transition';
+	import { onMount } from 'svelte'; // <-- New import
 	let showFlyout = false;
+
+	let flyout; // <-- New variable to reference the flyout element
+
+	// Function to close the flyout if clicked outside
+	function handleClickOutside(event) {
+		// <-- New function
+		if (flyout && !flyout.contains(event.target)) {
+			showFlyout = false;
+		}
+	}
+
+	// Attach the event listener when the component mounts
+	onMount(() => {
+		// <-- New lifecycle function
+		window.addEventListener('click', handleClickOutside);
+		return () => {
+			// Cleanup event listener when the component is destroyed
+			window.removeEventListener('click', handleClickOutside);
+		};
+	});
 </script>
 
 <header class="bg-white">
@@ -41,9 +62,9 @@
 			<div class="relative">
 				<button
 					type="button"
-					on:click={() => (showFlyout = !showFlyout)}
 					class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
 					aria-expanded="false"
+					on:click|stopPropagation={() => (showFlyout = !showFlyout)}
 				>
 					Product
 					<svg
@@ -59,18 +80,9 @@
 						/>
 					</svg>
 				</button>
-
-				<!--
-			'Product' flyout menu, show/hide based on flyout menu state.
-  
-			Entering: "transition ease-out duration-200"
-			  From: "opacity-0 translate-y-1"
-			  To: "opacity-100 translate-y-0"
-			Leaving: "transition ease-in duration-150"
-			  From: "opacity-100 translate-y-0"
-			  To: "opacity-0 translate-y-1"
-		  -->{#if showFlyout}
+				{#if showFlyout}
 					<div
+						bind:this={flyout}
 						transition:fly={{ y: 1, duration: 200, easing: (t) => t }}
 						class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
 					>
@@ -103,7 +115,7 @@
 								</div>
 								<div class="flex-auto">
 									<a href="#" class="block font-semibold text-gray-900">
-										Analytics
+										Cheaha
 										<span class="absolute inset-0" />
 									</a>
 									<p class="mt-1 text-gray-600">Get a better understanding of your traffic</p>
@@ -132,7 +144,7 @@
 								</div>
 								<div class="flex-auto">
 									<a href="#" class="block font-semibold text-gray-900">
-										Engagement
+										RC Cloud
 										<span class="absolute inset-0" />
 									</a>
 									<p class="mt-1 text-gray-600">Speak directly to your customers</p>
@@ -161,7 +173,7 @@
 								</div>
 								<div class="flex-auto">
 									<a href="#" class="block font-semibold text-gray-900">
-										Security
+										GitLab
 										<span class="absolute inset-0" />
 									</a>
 									<p class="mt-1 text-gray-600">Your customers’ data will be safe and secure</p>
@@ -190,7 +202,7 @@
 								</div>
 								<div class="flex-auto">
 									<a href="#" class="block font-semibold text-gray-900">
-										Integrations
+										Globus
 										<span class="absolute inset-0" />
 									</a>
 									<p class="mt-1 text-gray-600">Connect with third-party tools</p>
