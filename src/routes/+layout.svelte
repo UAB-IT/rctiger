@@ -1,9 +1,11 @@
 <script>
-	import Nav from '$lib/Nav.svelte';
+	import Nav from '$lib/nav.svelte';
+	import Header from '$lib/header.svelte';
 	import '../app.css';
 </script>
 
-<Nav />
 <main>
+	<Nav />
+	<Header />
 	<slot />
 </main>
