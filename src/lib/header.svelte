@@ -22,14 +22,14 @@
 			fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)"
 		/>
 	</svg>
-	<div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
-		<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
-			<img
+	<div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-20">
+		<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-0">
+			<!--<img
 				class="h-11"
 				src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-				alt="Your Company"
-			/>
-			<div class="mt-24 sm:mt-32 lg:mt-16">
+				alt="your company"
+			/>-->
+			<div class="mt-24 sm:mt-32 lg:mt-0">
 				<a href="#" class="inline-flex space-x-6">
 					<span
 						class="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10"
@@ -38,7 +38,7 @@
 					<span
 						class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600"
 					>
-						<span>Just shipped v1.0</span>
+						<span>We've installed 40 A100 80 GB GPUs on Cheaha!</span>
 						<svg
 							class="h-5 w-5 text-gray-400"
 							viewBox="0 0 20 20"
@@ -55,11 +55,13 @@
 				</a>
 			</div>
 			<h1 class="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-				Deploy to the cloud with confidence
+				UAB Research Computing
 			</h1>
 			<p class="mt-6 text-lg leading-8 text-gray-600">
-				Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
-				Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+				The Research Computing System (RCS) provides a framework for sharing research data,
+				accessing computing power, and collaborating with peers on campus and around the globe. Our
+				goal is to construct a dynamic "network of services" that you can use to organize, study and
+				share your research data.
 			</p>
 			<div class="mt-10 flex items-center gap-x-6">
 				<a
