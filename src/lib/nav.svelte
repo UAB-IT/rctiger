@@ -120,7 +120,7 @@
 										Cheaha
 										<span class="absolute inset-0" />
 									</a>
-									<p class="mt-1 text-gray-600">Get a better understanding of your traffic</p>
+									<p class="mt-1 text-gray-600">High performance computing cluster</p>
 								</div>
 							</div>
 							<div
@@ -149,7 +149,7 @@
 										RC Cloud
 										<span class="absolute inset-0" />
 									</a>
-									<p class="mt-1 text-gray-600">Speak directly to your customers</p>
+									<p class="mt-1 text-gray-600">Campus-Wide Cloud Infrastructure Network</p>
 								</div>
 							</div>
 							<div
@@ -178,7 +178,7 @@
 										GitLab
 										<span class="absolute inset-0" />
 									</a>
-									<p class="mt-1 text-gray-600">Your customers’ data will be safe and secure</p>
+									<p class="mt-1 text-gray-600">Collaborative Software Development Platform</p>
 								</div>
 							</div>
 							<div
@@ -207,7 +207,7 @@
 										Globus
 										<span class="absolute inset-0" />
 									</a>
-									<p class="mt-1 text-gray-600">Connect with third-party tools</p>
+									<p class="mt-1 text-gray-600">Seamless S3 Data Transfer Solution</p>
 								</div>
 							</div>
 							<div
