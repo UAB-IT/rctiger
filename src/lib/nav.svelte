@@ -1,4 +1,6 @@
 <script>
+	import DropdownNavButton from './DropdownNavButton.svelte';
+	import NavButton from './NavButton.svelte';
 	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte'; // <-- New import
 	import Logo from '$lib/assets/rc.svg';
@@ -58,6 +60,16 @@
 			</button>
 		</div>
 		<div class="hidden lg:flex lg:gap-x-12">
+			<NavButton href="#" label="Docs" />
+			<!--<DropdownNavButton
+				label="Products"
+				items={[
+					{ title: 'Cheaha', href: '#', desc: 'High Performance Cloud Infrastructure' },
+					{ title: 'RC Cloud', href: '#', desc: 'High Performance Cloud Infrastructure' },
+					{ title: 'Gitlab', href: '#', desc: 'High Performance Cloud Infrastructure' },
+					{ title: 'Globus', href: '#', desc: 'High Performance Cloud Infrastructure' }
+				]}
+			/>-->
 			<div class="relative">
 				<button
 					type="button"
@@ -65,7 +77,7 @@
 					aria-expanded="false"
 					on:click|stopPropagation={() => (showFlyout = !showFlyout)}
 				>
-					Product
+					Products
 					<svg
 						class="h-5 w-5 flex-none text-gray-400"
 						viewBox="0 0 20 20"
@@ -103,12 +115,7 @@
 										<path
 											stroke-linecap="round"
 											stroke-linejoin="round"
-											d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"
-										/>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"
+											d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"
 										/>
 									</svg>
 								</div>
@@ -195,7 +202,7 @@
 										<path
 											stroke-linecap="round"
 											stroke-linejoin="round"
-											d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"
+											d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
 										/>
 									</svg>
 								</div>
@@ -205,35 +212,6 @@
 										<span class="absolute inset-0" />
 									</a>
 									<p class="mt-1 text-gray-600">Seamless S3 Data Transfer Solution</p>
-								</div>
-							</div>
-							<div
-								class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
-							>
-								<div
-									class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-								>
-									<svg
-										class="h-6 w-6 text-gray-600 group-hover:text-emerald-600"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke-width="1.5"
-										stroke="currentColor"
-										aria-hidden="true"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
-										/>
-									</svg>
-								</div>
-								<div class="flex-auto">
-									<a href="#" class="block font-semibold text-gray-900">
-										Automations
-										<span class="absolute inset-0" />
-									</a>
-									<p class="mt-1 text-gray-600">Build strategic funnels that will convert</p>
 								</div>
 							</div>
 						</div>
@@ -272,7 +250,7 @@
 										clip-rule="evenodd"
 									/>
 								</svg>
-								Contact sales
+								Contact Us
 							</a>
 						</div>
 					</div>
@@ -285,9 +263,9 @@
 				{/if}
 			</div>
 
-			<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-			<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-			<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+			<NavButton href="#" label="FAQ" />
+			<NavButton href="#" label="Blog" />
+			<NavButton href="#" label="About" />
 		</div>
 		<div class="hidden lg:flex lg:flex-1 lg:justify-end">
 			<a href="#" class="text-sm font-semibold leading-6 text-gray-900"
@@ -341,7 +319,7 @@
 									aria-expanded="false"
 									on:click={() => (showProductSubmenu = !showProductSubmenu)}
 								>
-									Product
+									Products
 									<!-- Expand/collapse icon -->
 									<svg
 										class="h-5 w-5 flex-none"
@@ -362,28 +340,24 @@
 										<a
 											href="#"
 											class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-											>Analytics</a
+											>Cheaha</a
 										>
 										<a
 											href="#"
 											class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-											>Engagement</a
+											>RC Cloud</a
 										>
 										<a
 											href="#"
 											class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-											>Security</a
+											>Gitlab</a
 										>
 										<a
 											href="#"
 											class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-											>Integrations</a
+											>Globus</a
 										>
-										<a
-											href="#"
-											class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-											>Automations</a
-										>
+
 										<a
 											href="#"
 											class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
@@ -392,7 +366,7 @@
 										<a
 											href="#"
 											class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-											>Contact sales</a
+											>Contact us</a
 										>
 									</div>
 								{/if}
@@ -400,17 +374,17 @@
 							<a
 								href="#"
 								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-								>Features</a
+								>FAQ</a
 							>
 							<a
 								href="#"
 								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-								>Marketplace</a
+								>Blog</a
 							>
 							<a
 								href="#"
 								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-								>Company</a
+								>About</a
 							>
 						</div>
 						<div class="py-6">
