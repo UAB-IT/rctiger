@@ -60,16 +60,7 @@
 			</button>
 		</div>
 		<div class="hidden lg:flex lg:gap-x-12">
-			<NavButton href="#" label="Docs" />
-			<!--<DropdownNavButton
-				label="Products"
-				items={[
-					{ title: 'Cheaha', href: '#', desc: 'High Performance Cloud Infrastructure' },
-					{ title: 'RC Cloud', href: '#', desc: 'High Performance Cloud Infrastructure' },
-					{ title: 'Gitlab', href: '#', desc: 'High Performance Cloud Infrastructure' },
-					{ title: 'Globus', href: '#', desc: 'High Performance Cloud Infrastructure' }
-				]}
-			/>-->
+			
 			<div class="relative">
 				<button
 					type="button"
@@ -255,7 +246,6 @@
 						</div>
 					</div>
 				{:else}
-					<!-- New Svelte script -->
 					<div
 						transition:fly={{ y: 1, duration: 150, easing: (t) => 1 - t }}
 						class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
@@ -266,6 +256,15 @@
 			<NavButton href="#" label="FAQ" />
 			<NavButton href="#" label="Blog" />
 			<NavButton href="#" label="About" />
+			<DropdownNavButton
+				label="Docs"
+				items={[
+					{ title: 'Cheaha', href: '#', desc: 'High Performance Cloud Infrastructure' },
+					{ title: 'RC Cloud', href: '#', desc: 'High Performance Cloud Infrastructure' },
+					{ title: 'Gitlab', href: '#', desc: 'High Performance Cloud Infrastructure' },
+					{ title: 'Globus', href: '#', desc: 'High Performance Cloud Infrastructure' }
+				]}
+			/>
 		</div>
 		<div class="hidden lg:flex lg:flex-1 lg:justify-end">
 			<a href="#" class="text-sm font-semibold leading-6 text-gray-900"
