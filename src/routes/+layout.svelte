@@ -1,6 +1,6 @@
 <script>
-	import Nav from '$lib/nav.svelte';
-	import Header from '$lib/header.svelte';
+	import Nav from '$lib/Nav.svelte';
+	import Header from '$lib/Header.svelte';
 	import '../app.css';
 </script>
 

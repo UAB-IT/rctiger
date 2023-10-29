@@ -301,9 +301,13 @@
 	<!-- Mobile menu, show/hide based on menu open state. -->
 	{#if showMobileMenu}
 		<div class="lg:hidden" role="dialog" aria-modal="true">
-			<!-- Background backdrop, show/hide based on slide-over state. -->
-			<div class="fixed inset-0 z-20 bg-black opacity-50" />
-			<div class="fixed inset-y-0 right-0 z-30 w-full max-w-xs bg-white">
+			<!-- Background backdrop -->
+			<div class="fixed inset-0 z-10" />
+			<!-- Menu container -->
+			<div
+				class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+			>
+				<!-- Header section -->
 				<div class="flex items-center justify-between">
 					<a href="#" class="-m-1.5 p-1.5">
 						<span class="sr-only">Your Company</span>
@@ -313,8 +317,13 @@
 							alt=""
 						/>
 					</a>
-					<button type="button" class="p-4" on:click={() => (showMobileMenu = false)}>
+					<button
+						type="button"
+						class="-m-2.5 rounded-md p-2.5 text-gray-700"
+						on:click={() => (showMobileMenu = false)}
+					>
 						<span class="sr-only">Close menu</span>
+						<!-- Close button SVG -->
 						<svg
 							class="h-6 w-6"
 							fill="none"
@@ -327,6 +336,7 @@
 						</svg>
 					</button>
 				</div>
+				<!-- Menu items -->
 				<div class="mt-6 flow-root">
 					<div class="-my-6 divide-y divide-gray-500/10">
 						<div class="space-y-2 py-6">
@@ -339,11 +349,7 @@
 									on:click={() => (showProductSubmenu = !showProductSubmenu)}
 								>
 									Product
-									<!--
-					Expand/collapse icon, toggle classes based on menu open state.
-  
-					Open: "rotate-180", Closed: ""
-				  -->
+									<!-- Expand/collapse icon -->
 									<svg
 										class="h-5 w-5 flex-none"
 										viewBox="0 0 20 20"
