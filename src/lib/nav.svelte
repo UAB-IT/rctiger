@@ -1,6 +1,7 @@
 <script>
 	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte'; // <-- New import
+	import logo from '$lib/assets/rc.svg';
 	let showFlyout = false;
 	let showMobileMenu = false;
 	let showProductSubmenu = false;
@@ -30,7 +31,7 @@
 		<div class="flex lg:flex-1">
 			<a href="#" class="-m-1.5 p-1.5">
 				<span class="sr-only">Your Company</span>
-				<img class="h-8 w-auto" src="/rc.png" alt="" />
+				<img class="h-8 w-auto" src={logo} alt="company logo" />
 			</a>
 		</div>
 		<div class="flex lg:hidden">
@@ -92,7 +93,7 @@
 									class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
 								>
 									<svg
-										class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+										class="h-6 w-6 text-gray-600 group-hover:text-emerald-600"
 										fill="none"
 										viewBox="0 0 24 24"
 										stroke-width="1.5"
@@ -126,7 +127,7 @@
 									class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
 								>
 									<svg
-										class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+										class="h-6 w-6 text-gray-600 group-hover:text-emerald-600"
 										fill="none"
 										viewBox="0 0 24 24"
 										stroke-width="1.5"
@@ -155,7 +156,7 @@
 									class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
 								>
 									<svg
-										class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+										class="h-6 w-6 text-gray-600 group-hover:text-emerald-600"
 										fill="none"
 										viewBox="0 0 24 24"
 										stroke-width="1.5"
@@ -184,7 +185,7 @@
 									class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
 								>
 									<svg
-										class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+										class="h-6 w-6 text-gray-600 group-hover:text-emerald-600"
 										fill="none"
 										viewBox="0 0 24 24"
 										stroke-width="1.5"
@@ -213,7 +214,7 @@
 									class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
 								>
 									<svg
-										class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+										class="h-6 w-6 text-gray-600 group-hover:text-emerald-600"
 										fill="none"
 										viewBox="0 0 24 24"
 										stroke-width="1.5"
@@ -307,11 +308,7 @@
 				<div class="flex items-center justify-between">
 					<a href="#" class="-m-1.5 p-1.5">
 						<span class="sr-only">Your Company</span>
-						<img
-							class="h-8 w-auto"
-							src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-							alt=""
-						/>
+						<img class="h-8 w-auto" src={logo} alt="company logo" />
 					</a>
 					<button
 						type="button"

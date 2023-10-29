@@ -1,3 +1,7 @@
+<script>
+	import Docs from '$lib/assets/rc-docs1.png';
+</script>
+
 <div class="relative isolate overflow-hidden bg-white">
 	<svg
 		class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
@@ -26,13 +30,13 @@
 		<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-0">
 			<!--<img
 				class="h-11"
-				src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+				src="https://tailwindui.com/img/logos/mark.svg?color=emerald&shade=600"
 				alt="your company"
 			/>-->
 			<div class="mt-24 sm:mt-32 lg:mt-0">
 				<a href="#" class="inline-flex space-x-6">
 					<span
-						class="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10"
+						class="rounded-full bg-emerald-600/10 px-3 py-1 text-sm font-semibold leading-6 text-emerald-600 ring-1 ring-inset ring-emerald-600/10"
 						>What's new</span
 					>
 					<span
@@ -66,7 +70,7 @@
 			<div class="mt-10 flex items-center gap-x-6">
 				<a
 					href="#"
-					class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+					class="rounded-md bg-emerald-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600"
 					>Get started</a
 				>
 				<a href="#" class="text-sm font-semibold leading-6 text-gray-900"
@@ -82,7 +86,7 @@
 					class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4"
 				>
 					<img
-						src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
+						src={Docs}
 						alt="App screenshot"
 						width="2432"
 						height="1442"
