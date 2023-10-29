@@ -1,5 +1,5 @@
 <style lang="postcss">
 	:global(html) {
-		background-color: theme(colors.blue.900);
+		background-color: theme(colors.emerald.900);
 	}
 </style>

@@ -1,7 +1,7 @@
 <script>
 	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte'; // <-- New import
-	import logo from '$lib/assets/rc.svg';
+	import Logo from '$lib/assets/rc.svg';
 	let showFlyout = false;
 	let showMobileMenu = false;
 	let showProductSubmenu = false;
@@ -31,7 +31,7 @@
 		<div class="flex lg:flex-1">
 			<a href="#" class="-m-1.5 p-1.5">
 				<span class="sr-only">Your Company</span>
-				<img class="h-8 w-auto" src={logo} alt="company logo" />
+				<img class="h-8 w-auto" src={Logo} alt="company Logo" />
 			</a>
 		</div>
 		<div class="flex lg:hidden">
@@ -308,7 +308,7 @@
 				<div class="flex items-center justify-between">
 					<a href="#" class="-m-1.5 p-1.5">
 						<span class="sr-only">Your Company</span>
-						<img class="h-8 w-auto" src={logo} alt="company logo" />
+						<img class="h-8 w-auto" src={Logo} alt="company Logo" />
 					</a>
 					<button
 						type="button"
