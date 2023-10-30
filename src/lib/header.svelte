@@ -33,7 +33,7 @@
 				src="https://tailwindui.com/img/logos/mark.svg?color=emerald&shade=600"
 				alt="your company"
 			/>-->
-			<div class="mt-24 sm:mt-32 lg:mt-0">
+			<!--<div class="mt-14 sm:mt-12 lg:mt-0">
 				<a href="#" class="inline-flex space-x-6">
 					<span
 						class="rounded-full bg-emerald-600/10 px-3 py-1 text-sm font-semibold leading-6 text-emerald-600 ring-1 ring-inset ring-emerald-600/10"
@@ -57,7 +57,7 @@
 						</svg>
 					</span>
 				</a>
-			</div>
+			</div>-->
 			<h1 class="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
 				UAB Research Computing
 			</h1>
