@@ -1,7 +1,13 @@
 <!-- FAQItem.svelte -->
 <script>
-	export let title; // FAQ title
-	export let answer; // FAQ answer
+	/**
+	 * @type {string}
+	 */
+	 export let title; // FAQ title
+	/**
+	 * @type {string}
+	 */
+	 export let answer; // FAQ answer
 	export let initiallyOpen = false; // Whether the item should start as open
 	let expanded = initiallyOpen; // Track if FAQ is expanded
   </script>

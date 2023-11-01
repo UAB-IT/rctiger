@@ -54,7 +54,7 @@
 		</div>
 		<div class="max-w-1340 mx-auto grid grid-cols-12 pt-12 px-4 xl:px-0 lg:gap-10 xl:gap-0">
 			<div class="lg:col-span-4 xl:col-span-6">
-				<button style="vertical-align: top;" class="uab-footer__nondiscrimination leading-none uab-button uab-button-text text-white text-xs hover:text-white" uab-toggle="target: #nondiscrimination" type=" button" data-toggled="false"> Nondiscrimination Statement <i class="ml-2 text-lg text-campus-green fas fa-caret-down" aria-hidden="true"></i> </button>
+				<button style="vertical-align: top;" class="uab-footer__nondiscrimination leading-none uab-button uab-button-text text-white text-xs hover:text-white"> Nondiscrimination Statement <i class="ml-2 text-lg text-campus-green fas fa-caret-down" aria-hidden="true"></i> </button>
 			</div>
 			<div class="lg:col-span-8 xl:col-span-6">
 				<ul class="divide-solid divide-white divide-x divide-y-0 flex flex-wrap list-none p-0 text-xs text-white leading-none">
@@ -69,6 +69,6 @@
 		</div>
 	</div>
 	<div style="background-color: #c6da9b;">
-		<div class="max-w-1340 mx-auto xl:px-0 px-4 py-4 text-black text-sm" id="nondiscrimination" hidden="hidden">UAB is an Equal Opportunity/Affirmative Action Employer committed to fostering a diverse, equitable and family-friendly environment in which all faculty and staff can excel and achieve work/life balance irrespective of race, national origin, age, genetic or family medical history, gender, faith, gender identity and expression as well as sexual orientation. UAB also encourages applications from individuals with disabilities and veterans.</div>
+		<div class="max-w-1340 mx-auto xl:px-0 px-4 py-4 text-black text-sm" id="nondiscrimination">UAB is an Equal Opportunity/Affirmative Action Employer committed to fostering a diverse, equitable and family-friendly environment in which all faculty and staff can excel and achieve work/life balance irrespective of race, national origin, age, genetic or family medical history, gender, faith, gender identity and expression as well as sexual orientation. UAB also encourages applications from individuals with disabilities and veterans.</div>
 	</div>
 </footer>

@@ -1,11 +1,12 @@
 <script>
+	import { fly } from 'svelte/transition';
 	export let label = 'Menu';
 	/**
 	 * @type {any[]}
 	 */
 	export let items = [];
 	let showDropdown = false;
-
+	let flyout; 
 	/**
 	 * @param {{ target: { closest: (arg0: string) => any; }; }} event
 	 */
@@ -50,7 +51,9 @@
 	{#if showDropdown}
 		<!-- Dropdown Content -->
 		<div
-			class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+		bind:this={flyout}
+		transition:fly={{ y: 1, duration: 200, easing: (t) => t }}
+			class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 "
 			style=""
 		>
 			<div class="p-4">
