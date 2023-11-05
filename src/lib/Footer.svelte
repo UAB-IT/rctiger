@@ -1,8 +1,15 @@
+<script>
+let isTextVisible = false;
+
+  function toggleTextVisibility() {
+    isTextVisible = !isTextVisible;
+  }
+  </script>
 <footer class="hidden lg:block reverse-focus-section">
-	<div class="pt-12 pb-1" style="background-color: #0f3b2d;">
+	<div class="pt-12 pb-1">
 		<div class="max-w-1340 mx-auto grid grid-cols-12 px-4 xl:px-0 lg:gap-10 xl:gap-0">
 			<!--BEGIN Content-->
-			<div class="lg:col-span-4 xl:col-span-6 flex flex-col gap-10"><a href="https://www.uab.edu/home" aria-label="Link to UAB homepage. Opens a new website."><img src="/business/home/templates/flame/images/logos/core-logo-white-with-R-standard.svg" class="max-w-sm"></a> <span class="bg-uab-green h-2 w-24"></span>
+			<div class="lg:col-span-4 xl:col-span-6 flex flex-col gap-10"><a href="https://www.uab.edu/home" aria-label="Link to UAB homepage. Opens a new website."><img src="https://uab.edu/business/home/templates/flame/images/logos/core-logo-white-with-R-standard.svg" class="max-w-sm"></a> <span class="bg-uab-green h-2 w-24"></span>
 				<div>
 					<div>
 						<div class="text-2xl xl:text-3xl text-white mb-1">UAB Research Computing</div>
@@ -52,13 +59,14 @@
 			</div>
 			<!--END Links -->
 		</div>
-		<div class="max-w-1340 mx-auto grid grid-cols-12 pt-12 px-4 xl:px-0 lg:gap-10 xl:gap-0">
-			<div class="lg:col-span-4 xl:col-span-6">
-				<button style="vertical-align: top;" class="uab-footer__nondiscrimination leading-none uab-button uab-button-text text-white text-xs hover:text-white"> Nondiscrimination Statement <i class="ml-2 text-lg text-campus-green fas fa-caret-down" aria-hidden="true"></i> </button>
-			</div>
-			<div class="lg:col-span-8 xl:col-span-6">
+		
+		  
+			<div class="lg:col-span-8 xl:col-span-6 my-2">
 				<ul class="divide-solid divide-white divide-x divide-y-0 flex flex-wrap list-none p-0 text-xs text-white leading-none">
-					<li class="pr-3">
+					<li class="px-3">
+						<button id="ot-sdk-btn" class="ot-sdk-show-settings hover:text-white leading-none text-white text-xs uab-button uab-button-text" on:click={toggleTextVisibility}>Nondiscrimination Statement</button>
+					</li>
+					<li class="px-3">
 						<button id="ot-sdk-btn" class="ot-sdk-show-settings hover:text-white leading-none text-white text-xs uab-button uab-button-text">Cookie Settings</button>
 					</li>
 					<li class="px-3"><a class="no-underline text-white" href="https://www.uab.edu/privacy">Privacy <i class="far fa-external-link-alt ml-1 text-xs" aria-hidden="true"></i> <span class="sr-only">opens a new website</span> </a></li>
@@ -67,8 +75,11 @@
 				</ul>
 			</div>
 		</div>
-	</div>
-	<div style="background-color: #c6da9b;">
-		<div class="max-w-1340 mx-auto xl:px-0 px-4 py-4 text-black text-sm" id="nondiscrimination">UAB is an Equal Opportunity/Affirmative Action Employer committed to fostering a diverse, equitable and family-friendly environment in which all faculty and staff can excel and achieve work/life balance irrespective of race, national origin, age, genetic or family medical history, gender, faith, gender identity and expression as well as sexual orientation. UAB also encourages applications from individuals with disabilities and veterans.</div>
-	</div>
+	{#if isTextVisible}
+<div style="background-color: #c6da9b;">
+  <div class="max-w-1340 mx-auto xl:px-0 px-4 py-4 text-black text-sm" id="nondiscrimination">
+    UAB is an Equal Opportunity/Affirmative Action Employer committed to fostering a diverse, equitable and family-friendly environment in which all faculty and staff can excel and achieve work/life balance irrespective of race, national origin, age, genetic or family medical history, gender, faith, gender identity and expression as well as sexual orientation. UAB also encourages applications from individuals with disabilities and veterans.
+  </div>
+</div>
+{/if}
 </footer>

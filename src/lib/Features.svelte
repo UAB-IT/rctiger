@@ -1,13 +1,12 @@
 <div class="py-24 sm:py-32">
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl lg:mx-0">
-			<h2 class="text-base font-semibold leading-7 text-emerald-400">Everything you need</h2>
+			<h2 class="text-base font-semibold leading-7 text-emerald-400">Empower Your Scientific Journey</h2>
 			<p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-				No server? No problem.
+				Unleash Your Research Potential with Ease
 			</p>
 			<p class="mt-6 text-lg leading-8 text-gray-300">
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
-				suscipit eaque, iste dolor cupiditate blanditiis.
+				Join us and be at the forefront of scientific innovation, where opportunities are limitless.
 			</p>
 		</div>
 		<dl
@@ -30,7 +29,7 @@
 					Account Management
 				</dt>
 				<dd class="inline">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.
+					Creating a new account is a simple, automated, self-service process. To start, navigate to https://rc.uab.edu, our Open OnDemand web portal, and authenticate. The authentication process differs depending on your affiliation. Accounts are available to researchers and their guests. 
 				</dd>
 			</div>
 			<div class="relative pl-9">
@@ -50,7 +49,7 @@
 					Data Management
 				</dt>
 				<dd class="inline">
-					Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+					Your data is in safe hands, and we're committed to providing the storage solutions you need for your research success. With individual and group quotas, you can tailor your storage allocation to your specific needs. And rest assured, our expert team is here to assist you every step of the way.
 				</dd>
 			</div>
 			<div class="relative pl-9">
@@ -70,7 +69,7 @@
 					Workflow Solutions
 				</dt>
 				<dd class="inline">
-					Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus voluptas blanditiis et.
+					Streamline your research with our cutting-edge workflow solutions. Our user-friendly tools like Anaconda, Gitlab, and containerization make it simple to organize your projects, collaborate with others, ensure reproducibility, and leverage powerful computing resources.
 				</dd>
 			</div>
 			<div class="relative pl-9">
@@ -90,7 +89,7 @@
 					Cheaha High Performance Computing
 				</dt>
 				<dd class="inline">
-					Iure sed ab. Aperiam optio placeat dolor facere. Officiis pariatur eveniet atque et dolor.
+					Cheaha is a High Performance Computing (HPC) resource intended primarily for batch processing of research computing software. We offer a user-friendly portal website Open OnDemand with graphical interfaces to the most common features, all in one place. 
 				</dd>
 			</div>
 			<div class="relative pl-9">
@@ -110,7 +109,7 @@
 					RC Cloud Infrastructure
 				</dt>
 				<dd class="inline">
-					Laudantium tempora sint ut consectetur ratione. Ut illum ut rem numquam fuga delectus.
+					Our cloud.rc portal, based on OpenStack cloud software, provides a home for more permanent research applications such as web pages and database hosting, as well as a place where researchers can more fluidly develop applications for high performance compute.
 				</dd>
 			</div>
 			<div class="relative pl-9">
@@ -133,7 +132,7 @@
 					Kubernetes Container Management
 				</dt>
 				<dd class="inline">
-					Culpa dolorem voluptatem velit autem rerum qui et corrupti. Quibusdam quo placeat.
+					Kubernetes (K8s, named because there are 8 letters between 'K' and 's') can be used to automate workflows of all kinds. Researchers can use KSoftware engineers can use it to create GitLab runners to execute continuous integration workflows to deploy code updates seemlessly.
 				</dd>
 			</div>
 		</dl>
