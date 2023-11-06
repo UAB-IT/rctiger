@@ -110,7 +110,7 @@
 									</svg>
 								</div>
 								<div class="flex-auto">
-									<a href="#" class="block font-semibold text-gray-900">
+									<a href="https://rc.uab.edu/" class="block font-semibold text-gray-900">
 										Cheaha
 										<span class="absolute inset-0" />
 									</a>
@@ -139,7 +139,7 @@
 									</svg>
 								</div>
 								<div class="flex-auto">
-									<a href="#" class="block font-semibold text-gray-900">
+									<a href="https://cloud.rc.uab.edu/" class="block font-semibold text-gray-900">
 										RC Cloud
 										<span class="absolute inset-0" />
 									</a>
@@ -168,7 +168,7 @@
 									</svg>
 								</div>
 								<div class="flex-auto">
-									<a href="#" class="block font-semibold text-gray-900">
+									<a href="https://gitlab.rc.uab.edu/" class="block font-semibold text-gray-900">
 										GitLab
 										<span class="absolute inset-0" />
 									</a>
@@ -197,7 +197,7 @@
 									</svg>
 								</div>
 								<div class="flex-auto">
-									<a href="#" class="block font-semibold text-gray-900">
+									<a href="https://app.globus.org/" class="block font-semibold text-gray-900">
 										Globus
 										<span class="absolute inset-0" />
 									</a>
@@ -258,10 +258,10 @@
 			<DropdownNavButton
 				label="Docs"
 				items={[
-					{ title: 'Cheaha', href: '#', desc: 'High Performance Cloud Infrastructure' },
-					{ title: 'RC Cloud', href: '#', desc: 'High Performance Cloud Infrastructure' },
-					{ title: 'Gitlab', href: '#', desc: 'High Performance Cloud Infrastructure' },
-					{ title: 'Globus', href: '#', desc: 'High Performance Cloud Infrastructure' }
+					{ title: 'Cheaha', href: 'https://docs.rc.uab.edu/cheaha/getting_started/', desc: 'High Performance Cloud Infrastructure' },
+					{ title: 'RC Cloud', href: 'https://docs.rc.uab.edu/uab_cloud/', desc: 'High Performance Cloud Infrastructure' },
+					{ title: 'Gitlab', href: 'https://docs.rc.uab.edu/account_management/gitlab_account/', desc: 'High Performance Cloud Infrastructure' },
+					{ title: 'Globus', href: 'https://docs.rc.uab.edu/data_management/transfer/globus/', desc: 'High Performance Cloud Infrastructure' }
 				]}
 			/>
 		</div>
@@ -283,7 +283,7 @@
 				<!-- Header section -->
 				<div class="flex items-center justify-between">
 					<a href="#" class="-m-1.5 p-1.5">
-						<span class="sr-only">Your Company</span>
+						<span class="sr-only">UAB</span>
 						<img class="h-8 w-auto" src={Logo} alt="company Logo" />
 					</a>
 					<button
@@ -392,7 +392,7 @@
 						</div>
 						<div class="py-6">
 							<a
-								href="#"
+								href="https://rc.uab.edu"
 								class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
 								>Log in</a
 							>
