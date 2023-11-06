@@ -1,6 +1,6 @@
 <script>
 	import DropdownNavButton from './DropdownNavButton.svelte';
-	import NavButton from './NavButton.svelte';
+	import NavButton from './MenuLinks.svelte';
 	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte'; // <-- New import
 	import Logo from '$lib/assets/rc.svg';
