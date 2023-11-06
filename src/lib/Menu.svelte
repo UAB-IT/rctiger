@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import DropdownNavButton from './DropdownNavButton.svelte';
 	import NavButton from './MenuLinks.svelte';
 	import { fly } from 'svelte/transition';
@@ -7,15 +7,14 @@
 	let showFlyout = false;
 	let showMobileMenu = false;
 	let showProductSubmenu = false;
-	let flyout; // <-- New variable to reference the flyout element
-
-	// Function to close the flyout if clicked outside
-	function handleClickOutside(event) {
-		// <-- New function
-		if (flyout && !flyout.contains(event.target)) {
-			showFlyout = false;
-		}
-	}
+	let flyout: HTMLElement | null = null; // Initialize as null
+  // Function to close the flyout if clicked outside
+  function handleClickOutside(event: MouseEvent) {
+    const target = event.target as Node;
+    if (flyout && !flyout.contains(target)) {
+      showFlyout = false;
+    }
+  }
 
 	// Attach the event listener when the component mounts
 	onMount(() => {

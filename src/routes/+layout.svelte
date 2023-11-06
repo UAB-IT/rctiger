@@ -1,6 +1,6 @@
 <script>
 	import Nav from '$lib/Menu.svelte';
-	import Header from '$lib/Header.svelte';
+	import Header from '$lib/Banner.svelte';
 	import Features from '$lib/Features.svelte';
 	import FAQ from '$lib/FAQ.svelte';
 	import News from '$lib/News.svelte';
