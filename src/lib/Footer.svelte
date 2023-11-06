@@ -16,7 +16,7 @@ let isTextVisible = false;
 						<div class="text-white text-lg mb-2">710 13th St. South, Birmingham, AL 35233</div>
 						<div class="text-white">(205) 934-8800</div>
 					</div>
-					<div class="xl:flex gap-5 items-center mt-4"><a href="/business/home/about/contact-us" class="bg-uab-green inline-block no-underline hover:no-underline hover:bg-dragons-lair-green px-3 py-1 rounded-full text-white mb-5 xl:mb-0">Contact Us</a>
+					<div class="xl:flex gap-5 items-center mt-4"><a href="/business/home/about/contact-us" class="bg-uab-green inline-block no-underline hover:no-underline hover:bg-dragons-lair-green px-0 py-1 rounded-full text-white mb-5 xl:mb-0">Contact Us</a>
 						<ul class="my-0 flex text-2xl justify-center md:justify-start gap-4 text-white list-none p-0">
 							<li><a class="" href="https://www.linkedin.com/school/university-of-alabama-at-birmingham---collat-school-of-business/" aria-label="Linked In"> <i class="fab fa-linkedin text-white" aria-hidden="true"></i> </a></li>
 							<li><a class="" href="http://www.facebook.com/pages/Birmingham-AL/UAB-School-of-Business/67512885080?ref=ts" aria-label="Facebook"> <i class="fab fa-facebook-square text-white" aria-hidden="true"></i> </a></li>
