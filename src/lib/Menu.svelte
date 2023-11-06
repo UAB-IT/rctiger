@@ -7,7 +7,7 @@
 	let showFlyout = false;
 	let showMobileMenu = false;
 	let showProductSubmenu = false;
-	let flyout: HTMLElement | null = null; // Initialize as null
+	let flyout:HTMLElement | null=null; 
   // Function to close the flyout if clicked outside
   function handleClickOutside(event: MouseEvent) {
     const target = event.target as Node;
