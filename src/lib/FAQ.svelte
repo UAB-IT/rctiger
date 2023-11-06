@@ -1,5 +1,5 @@
 <script>
-	import FAQItem from './FAQItem.svelte';
+	import FAQItem from './ItemFAQ.svelte';
   </script>
   
   <div class="bg-white">
