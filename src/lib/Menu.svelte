@@ -258,7 +258,7 @@
 			<DropdownNavButton
 				label="Docs"
 				items={[
-					{ title: 'Cheaha', href: 'https://docs.rc.uab.edu/cheaha/getting_started/', desc: 'High Performance Cloud Infrastructure' },
+					{ title: 'Cheaha', href: "https://docs.rc.uab.edu/cheaha/getting_started/", desc: 'High Performance Cloud Infrastructure' },
 					{ title: 'RC Cloud', href: 'https://docs.rc.uab.edu/uab_cloud/', desc: 'High Performance Cloud Infrastructure' },
 					{ title: 'Gitlab', href: 'https://docs.rc.uab.edu/account_management/gitlab_account/', desc: 'High Performance Cloud Infrastructure' },
 					{ title: 'Globus', href: 'https://docs.rc.uab.edu/data_management/transfer/globus/', desc: 'High Performance Cloud Infrastructure' }
